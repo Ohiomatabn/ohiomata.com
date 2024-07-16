@@ -1,0 +1,97 @@
+:root{
+    --primary-color:#000;
+    --secondary-color:#fff;
+    --asset-color: rgb(251 146 60);
+    --light-color:rgb(229, 229, 229);
+}
+
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', serif;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    height: 100%;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+h3{
+    font-size: 22px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+p{
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    display: inline-block;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-2{
+    flex-direction: column;
+}
+
+.pd-3{
+    padding: 10px;
+}
+
+i{
+    font-size: 20px;
+}
+
+.btn, .btnn{
+    font-size: 14px;
+    border: 1px solid var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btnn{
+    border-color: var(--asset-color);
+    margin-right: 20px;
+}
+
+/*hero section*/
+.hero{
+    background-image: url('portfolio-background.jpg');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
