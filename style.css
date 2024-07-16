@@ -55,6 +55,10 @@ a{
     display: inline-block;
 }
 
+.hidden{
+    visibility: hidden;
+}
+
 .flex{
     display: flex;
     justify-content: space-between;
@@ -92,12 +96,12 @@ i{
     font-size: 14px;
     border: 1px solid var(--secondary-color);
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .btnn{
     border-color: var(--asset-color);
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 /*hero section*/
@@ -181,4 +185,50 @@ i{
 
 .skills h5{
     font-size: 17px;
+}
+
+/*contact*/
+.contact-2{
+    background-color: var(--primary-color);
+    padding: 100px 0;
+}
+
+input, textarea{
+    width: 600px;
+    height: 50px;
+    background-color: #222;
+    color: var(--secondary-color);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+textarea{
+    height: 200px;
+}
+
+input::placeholder, textarea::placeholder{
+    color: var(--secondary-color);
+    background-color: #222;
+}
+
+input:focus{
+    outline: none;
+}
+
+input.btnn{
+    width: 160px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+h2 i{
+    padding-right: 40px;
+}
+
+.col a i{
+    padding-right: 20px;
 }
