@@ -17,7 +17,7 @@ body{
 }
 
 .container{
-    width: 70%;
+    width: 80%;
     margin: auto;
     height: 100%;
 }
@@ -42,6 +42,7 @@ h3{
 
 p{
     font-size: 20px;
+    color: var(--secondary-color);
 }
 
 ul{
@@ -56,13 +57,18 @@ a{
 
 .flex{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 
 .flex-2{
     flex-direction: column;
+    justify-content: center;
+}
+
+.flex-3{
+    align-items: flex-start;
 }
 
 .pd-3{
@@ -95,3 +101,23 @@ i{
     background-position: center;
 }
 
+/*About section*/
+.about{
+    background-color: var(--primary-color);
+    padding: 150px 50px;
+}
+
+.image img{
+    width: 200px;
+    border-radius: 20px;
+}
+
+.text{
+    padding-right: 100px;
+}
+
+.text p{
+    color: #999;
+    line-height: 1.6;
+    padding-top: 20px;
+}
