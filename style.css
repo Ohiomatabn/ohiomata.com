@@ -229,14 +229,18 @@ textarea{
     outline: none;
 }
 
-input.btnn{
+.form input.btnn{
     width: 160px;
     background-color: transparent;
     cursor: pointer;
     transition: .5s;
+    border: 1px solid var(--asset-color);
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 14px;
 }
 
-input.btnn:hover, .btn:hover{
+.form input.btnn:hover, .btn:hover{
     background-color: #fff;
     color: #000;
 }
