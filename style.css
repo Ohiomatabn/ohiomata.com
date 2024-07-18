@@ -97,6 +97,7 @@ i{
     border: 1px solid var(--secondary-color);
     padding: 10px 20px;
     border-radius: 50px;
+    transition: .5s;
 }
 
 .btnn{
@@ -133,6 +134,15 @@ i{
     color: #999;
     line-height: 1.6;
     padding-top: 20px;
+}
+
+.social-media a{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.social-media a:hover{
+    transform: scale(1) translateY(-15px);
 }
 
 /*skills*/
@@ -223,6 +233,12 @@ input.btnn{
     width: 160px;
     background-color: transparent;
     cursor: pointer;
+    transition: .5s;
+}
+
+input.btnn:hover, .btn:hover{
+    background-color: #fff;
+    color: #000;
 }
 
 h2 i{
