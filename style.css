@@ -55,7 +55,7 @@ a{
     display: inline-block;
 }
 
-.hidden{
+.d-none{
     visibility: hidden;
 }
 
@@ -203,7 +203,7 @@ i{
     padding: 100px 0;
 }
 
-input, textarea{
+.form input, textarea{
     width: 600px;
     height: 50px;
     background-color: #222;
@@ -220,12 +220,12 @@ textarea{
     height: 200px;
 }
 
-input::placeholder, textarea::placeholder{
+.form input::placeholder, textarea::placeholder{
     color: var(--secondary-color);
     background-color: #222;
 }
 
-input:focus{
+.form input:focus{
     outline: none;
 }
 

@@ -118,41 +118,39 @@
               name="contact"
               method="post"
               data-netlify="true"
-              netlify-honeypot="bot-field"
+              onsubmit="submit"
+              data-netlify-honeypot="bot-field"
             >
-              <input type="hidden" name="form-name" value="contact" />
-              <p class="hidden">
-                <label for=""
-                  >Don't fill this out if you're human: <input name="bot-field"
-                /></label>
-              </p>
+              <input type="text" name="bot-field" id="" class="d-none" />
 
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                required
-              />
-              <br />
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                required
-              />
-              <br />
-              <textarea
-                name="message"
-                id="message "
-                placeholder="Message"
-                required
-                cols="50"
-                rows="10"
-              ></textarea>
-              <br />
-              <input type="submit" value="Send Message" class="btnn button" />
+              <div class="form">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+                <br />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+                <br />
+                <textarea
+                  name="message"
+                  id="message "
+                  placeholder="Message"
+                  required
+                  cols="50"
+                  rows="10"
+                ></textarea>
+                <br />
+                <input type="submit" value="Send Message" class="btnn button" />
+              </div>
             </form>
           </div>
 
