@@ -294,4 +294,8 @@ hr{
     .image{
         padding-top: 50px;
     }
+
+    .image img{
+        width:100%
+    }
 }
