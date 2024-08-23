@@ -163,23 +163,23 @@ i{
 }
 
 .stats p.html{
-    width: 95%;
+    width: 98%;
 }
 
 .stats p.css{
-    width: 85%;
+    width: 95%;
 }
 
 .stats p.git{
-    width: 90%;
+    width: 95%;
 }
 
 .stats p.github{
-    width: 88%;
+    width: 95%;
 }
 
 .stats p.boostrap{
-    width: 10%;
+    width: 70%;
     z-index: -2;
 }
 
