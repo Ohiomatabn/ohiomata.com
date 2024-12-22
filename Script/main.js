@@ -36,3 +36,8 @@ projects.forEach((project) =>{
 });
 
 document.querySelector('.js-project-container').innerHTML = projectHTML;
+
+const newDate = new Date();
+const year = newDate.getFullYear();
+document.querySelector('.current-year').innerHTML = year;
+console.log(year);
