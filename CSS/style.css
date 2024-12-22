@@ -138,34 +138,38 @@ i{
 .about{
     background-color: var(--primary-color);
     padding: 150px 0px;
+}
+.image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin-top: 40px;
+}
 
-    .image img{
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        object-fit: cover;
-        display: block;
-        margin-top: 40px;
-    }
+.text{
+    padding-right: 100px;
+    color: var(--secondary-color);
+}
 
-    .text{
-        padding-right: 100px;
+.about h2{
+    color: var(--secondary-color);
+}
 
-        p{
-            color: #999;
-            line-height: 1.6;
-            padding-top: 20px;
-        }
-    }
+.about p{
+    color: #999;
+    line-height: 1.6;
+    padding-top: 20px;
+}
 
-    .social-media a{
-        transform: scale(1);
-        transition: 0.5s;
-    }
+.social-media a{
+    transform: scale(1);
+    transition: 0.5s;
+}
 
-    .social-media a:hover{
-        transform: scale(1) translateY(-15px);
-    }
+.social-media a:hover{
+    transform: scale(1) translateY(-15px);
 }
 
 /*skills*/
@@ -365,6 +369,7 @@ footer p{
 
     .flex-5{
         align-items: flex-start;
+        flex-direction: column;
     }
 
     .display-none{
