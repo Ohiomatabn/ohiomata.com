@@ -4,10 +4,10 @@ export const projects = [{
   text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Veniam.',
   link: 'https://charityhospital.netlify.app/'
 },{
-  image: 'netlif.JGP',
+  image: 'netflix.JPG',
   name: 'Netflix Clone',
   text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Veniam.',
-  link: 'https://spacee-x.netlify.app/'
+  link: ''
 },{
   image: 'Nieva.JPG',
   name: 'Nieva Cream Webpage',
