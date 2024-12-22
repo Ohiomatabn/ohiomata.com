@@ -1,4 +1,5 @@
 import { skills } from "./skills.js";
+import { projects } from "./recent_projects.js";
 
 //HTML of skill section 
 
@@ -13,5 +14,25 @@ skills.forEach((skill) =>{
   `
   skillsHTML += skill;
 });
-
 document.querySelector('.js-skills-container').innerHTML = skillsHTML;
+
+//HTML of the project section
+let projectHTML = '';
+projects.forEach((project) =>{
+    project = `
+        <a href="${project.link}" target="_blank"
+            ><div class="project-1">
+                <img src="images/${project.image}" alt="" />
+                <div class="card">
+                <h4>${project.name}</h4>
+                <p>
+                    ${project.text}
+                </p>
+                </div>
+            </div></a
+        >
+    `
+    projectHTML += project;
+});
+
+document.querySelector('.js-project-container').innerHTML = projectHTML;
