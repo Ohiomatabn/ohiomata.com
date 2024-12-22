@@ -372,6 +372,10 @@ footer p{
         flex-direction: column;
     }
 
+    .flex-5 .col{
+        margin :0;
+    }
+
     .display-none{
         display: block;
     }
