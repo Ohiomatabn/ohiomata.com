@@ -1,0 +1,408 @@
+:root{
+    --primary-color:#000;
+    --secondary-color:#fff;
+    --asset-color: rgb(251 146 60);
+    --light-color:rgb(229, 229, 229);
+}
+
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+h3{
+    font-size: 22px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+p{
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    display: inline-block;
+}
+
+.inline-block a{
+    display: block;
+}
+
+.d-none{
+    visibility: hidden;
+}
+
+.display-none{
+    display: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-2{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-3{
+    align-items: flex-start;
+}
+
+.flex-4{
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.flex-4 .col{
+    flex-basis: 40%;
+}
+
+.flex-5 .col{
+    width: 100%;
+}
+
+.pd-3{
+    padding: 10px;
+}
+
+i{
+    font-size: 20px;
+}
+
+.btn, .btnn{
+    font-size: 14px;
+    border: 1px solid var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.btnn{
+    border-color: var(--asset-color);
+    margin-right: 50px;
+}
+
+/*hero section*/
+.hero{
+    background-image: url('../images/portfolio-background.jpg');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*About section*/
+.about{
+    background-color: var(--primary-color);
+    padding: 150px 0px;
+
+    .image img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin-top: 40px;
+    }
+
+    .text{
+        padding-right: 100px;
+
+        p{
+            color: #999;
+            line-height: 1.6;
+            padding-top: 20px;
+        }
+    }
+
+    .social-media a{
+        transform: scale(1);
+        transition: 0.5s;
+    }
+
+    .social-media a:hover{
+        transform: scale(1) translateY(-15px);
+    }
+}
+
+/*skills*/
+.skills{
+    padding: 100px 0;
+
+    h2{
+        color: var(--primary-color);
+        padding-bottom: 30px;
+    }
+    h5{
+        font-size: 17px;
+    }
+
+    .stats{
+        background-color: #cfcbcb;
+        border-radius: 50px;
+        height: 13px;
+
+        p{
+            color: var(--asset-color);
+            width: 50%;
+            background-color: var(--asset-color);
+            border-radius: 50px;
+            height: 13px;
+            font-size: 1px;
+        }
+
+        p.html{
+            width: 99%;
+        }
+
+        p.css{
+            width: 98%;
+        }
+
+        p.git{
+            width: 95%;
+        }
+
+        p.github{
+            width: 95%;
+        }
+
+        p.boostrap{
+            width: 90%;
+            z-index: -2;
+        }
+
+        p.javascript{
+            width: 40%;
+        }
+    }
+    
+}
+
+.project{
+    background-color: #fff;
+    color: #000;
+    padding-bottom: 50px;
+
+    h2{
+        padding: 30px;
+        color: #000;
+    }
+
+    h4{
+        text-align: center;
+        font-weight: 500;
+        padding: 10px 0;
+        color: #000
+    }
+
+    p{
+        font-size: 15px;
+        padding: 10px 10px;
+        color: #000;
+    }
+
+    img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+
+        div.project-1{
+            width: 100%;
+            padding: 0 0 5px 0;
+            margin: 10px;
+            box-shadow: 0 0 5px #000;
+        }
+    }
+}
+
+/*contact*/
+.contact-2{
+    background-color: var(--primary-color);
+    padding: 100px 0;
+
+    .form input, textarea{
+        width: 600px;
+        height: 50px;
+        background-color: #222;
+        color: var(--secondary-color);
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+
+    textarea{
+        height: 200px;
+    }
+
+    .form input::placeholder, textarea::placeholder{
+        color: var(--secondary-color);
+        background-color: #222;
+    }
+
+    .form input:focus{
+        outline: none;
+    }
+
+    .form input.btnn{
+        width: 160px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: .5s;
+        border: 1px solid var(--asset-color);
+        border-radius: 50px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .form input.btnn:hover, .btn:hover{
+        background-color: #fff;
+        color: #000;
+    }
+
+    h2 i{
+        padding-right: 40px;
+    }
+
+    .col a i{
+        padding-right: 20px;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer{
+    padding: 20px 0 50px 0;
+    background-color: var(--primary-color);
+    text-align: center;
+    word-spacing: 5px;
+    font-weight: 100;
+}
+
+hr{
+    height: 2px;
+    border: none;
+}
+
+@media (max-width:1000px){
+    .contact-2 .container .flex{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-2{
+        .form input, textarea{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:900px){
+
+    .flex-3{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-4 .col{
+        flex-basis: 100%;
+    }
+
+    .flex-5{
+        align-items: flex-start;
+    }
+
+    .display-none{
+        display: block;
+    }
+
+    .about{
+        padding: 150px 0 100px;
+        .text{
+            padding-right: 0;
+        }
+
+        .image img{
+            width:350px;
+            height: 350px;
+            margin-top: 0;
+        }
+
+        .image{
+            padding-top: 50px;
+        }
+    }
+
+    .project{
+        .grid{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+
+@media (max-width: 500px) {
+    .project{
+        .grid{
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+#name-error, #email-error, #message-error{
+    color: red;
+}
